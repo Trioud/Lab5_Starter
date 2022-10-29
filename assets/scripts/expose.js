@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', init);
 
 const playAudio = (path, soundValue) => {
 	const audio = new Audio(path);
-	audio.volume = soundValue;
+	audio.volume = soundValue / 100;
 	audio.play();
 }
 
